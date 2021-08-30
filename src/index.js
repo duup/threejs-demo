@@ -121,8 +121,10 @@ for (let i = 0; i < cubeCount; i++) {
   cubes.push(c);
 }
 
-scene.add(axesHelper);
-scene.add(cube, sphere, light, lightHelper, ...cubes);
+// scene.add(axesHelper);
+// scene.add(lightHelper)
+//scene.add(sphere)
+scene.add(...cubes, light);
 
 renderer.render(scene, camera);
 
